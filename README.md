@@ -58,7 +58,7 @@ The application will:
 
 - **✍️ Smart Response Generation**: Responses are tailored to the email context and include proper formatting
 
-- **💼Special Handling of Important Emails**: Specific treatment for certain emails (internship offers, bank transaction statements, travel bookings etc.) that would likely be useful to a student.
+- **💼 Special Handling of Important Emails**: Specific treatment for certain emails (internship offers, bank transaction statements, travel bookings etc.) that would likely be useful to a student.
 
 ## Acknowledgement
 This project was completed with reference to https://www.youtube.com/watch?v=zz0SA8xMBCo from The How-To Guy on Youtube. 
