@@ -7,6 +7,7 @@ This application automates various Gmail management tasks using CrewAI, a powerf
 git clone https://github.com/jungg02/Gmail-Automation-Agent.git
 cd Gmail-Automation-Agent
 ```
+
 2) Create and Activate Virtual Environment
 ```bash
 python3 -m venv .venv
@@ -16,7 +17,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```bash
 pip install uv
 uv tool install crewai
-
+```
 
 
 ## Features
