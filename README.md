@@ -21,14 +21,24 @@ pip install uv
 uv tool install crewai
 crewai install # when running for the first time
 ```
+4) Create a `.env` file in the root directory with the following variables:
 
+```
+# Model Selection
+MODEL=openai/gpt-4o-mini
+OPENAI_API_KEY=your_openai_api_key
+
+# Gmail credentials
+EMAIL_ADDRESS=your_email@gmail.com
+APP_PASSWORD=your_app_password
+```
 
 ## Features
-- **📋Email Categorization**: Automatically categorizes emails into specific types (newsletters, promotions, personal, etc.)
-- **🔔Priority Assignment**: Assigns priority levels (HIGH, MEDIUM, LOW) based on content and sender with strict classification rules
-- **🏷️Smart Organization**: Applies Gmail labels and stars based on categories and priorities
-- **💬Automated Responses**: Generates draft responses for important emails that need replies
-- **🧹Intelligent Cleanup**: Safely deletes low-priority emails based on age and category
+- **📋 Email Categorization**: Automatically categorizes emails into specific types (newsletters, promotions, personal, etc.)
+- **🔔 Priority Assignment**: Assigns priority levels (HIGH, MEDIUM, LOW) based on content and sender with strict classification rules
+- **🏷️ Smart Organization**: Applies Gmail labels and stars based on categories and priorities
+- **💬 Automated Responses**: Generates draft responses for important emails that need replies
+- **🧹 Intelligent Cleanup**: Safely deletes low-priority emails based on age and category
 - **🗑️ Trash Management**: Automatically empties trash to free up storage space
 
 ## Usage
