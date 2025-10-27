@@ -1,6 +1,7 @@
-# Gmail Automation Agent
-Automate Gmail tasks using CrewAI, a powerful multi-agent framework for orchestrating LLM-driven workflows.
-This project enables seamless interaction with Gmail — such as reading, classifying, summarizing, and managing emails — powered by large language models and crewai_tools.
+# 📬 Gmail Automation Agent
+This project automates various Gmail management tasks, saving countless hours and freeing up storage space. Additional functionalities useful for students such as special handling of emails regarding internships/job opportunities or bank transactions have also been included.
+
+Powered by CrewAI, a powerful multi-agent framework for orchestrating LLM-driven workflows, it enables seamless interaction with Gmail — such as reading, classifying, drafting, and managing emails.
 
 ## Set Up Instructions
 1) Clone the repository 
@@ -38,7 +39,7 @@ Run the application with:
 crewai run
 ```
 
-You'll be prompted to enter the number of emails to process (default is 5).
+You'll be prompted to enter the number of emails to process. (Up to user to select, with default being 5)
 
 The application will:
 1. 📥 Fetch your unread emails
@@ -49,20 +50,16 @@ The application will:
 6. 🧹 Empty the trash to free up storage space
 
 
-## 🌟 Special Features
+## Special Features
 
 - **📅 Smart Deletion Rules**: 
-  - Promotions older than 2 days are automatically deleted
-  - Newsletters older than 7 days (unless HIGH priority) are deleted
+  - Promotions or newsletters older than 7 days are automatically deleted
   - Receipts and important documents are archived instead of deleted
 
 - **✍️ Smart Response Generation**: Responses are tailored to the email context and include proper formatting
 
-- **💡 Creative Slack Notifications**: Fun, attention-grabbing notifications for important emails
-
-- **🧵 Thread Handling**: Properly tracks and manages email threads to maintain conversation context
-
+- **Special Handling of Important Emails**: Specific treatment for certain emails (internship offers, bank transaction statements, travel bookings etc.) that would likely be useful to a student.
 
 ## Acknowledgement
-This project was completed with reference to 
+This project was completed with reference to https://www.youtube.com/watch?v=zz0SA8xMBCo from The How-To Guy on Youtube. 
 

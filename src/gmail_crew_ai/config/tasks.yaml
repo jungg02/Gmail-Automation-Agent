@@ -129,11 +129,14 @@ cleanup_task:
     - Confirmation emails for purchases
     - Travel-related emails with booking information
     - Anything that might be needed for reference later
+    - Bank transaction emails
     
     For these emails, use the 'GmailArchiveTool' instead of deleting them.
     
     NEVER delete:
     - ANY email marked as HIGH or MEDIUM priority
+    - ANY email categorized as INTERNSHIPS_JOBS
+    - ANY receipts, invoices, booking confirmations, travel-related emails or bank transactions
     - ANY email from a personal contact
     - ANY email less than 7 days old
     
