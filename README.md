@@ -1,5 +1,6 @@
 # Gmail Automation Agent
-This application automates various Gmail management tasks using CrewAI, a powerful multi-agent framework for orchestrating LLM-driven workflows, saving hours of time and freeing up space.
+Automate Gmail tasks using CrewAI, a powerful multi-agent framework for orchestrating LLM-driven workflows.
+This project enables seamless interaction with Gmail — such as reading, classifying, summarizing, and managing emails — powered by large language models and crewai_tools.
 
 ## Set Up Instructions
 1) Clone the repository 
@@ -13,20 +14,21 @@ cd Gmail-Automation-Agent
 python3 -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
-3) Install dependencies
+3) Install Dependencies
 ```bash
 pip install uv
 uv tool install crewai
+crewai install # when running for the first time
 ```
 
 
 ## Features
-- **Email Categorization**: Automatically categorizes emails into specific types (newsletters, promotions, personal, etc.)
-- **Priority Assignment**: Assigns priority levels (HIGH, MEDIUM, LOW) based on content and sender with strict classification rules
-- **Smart Organization**: Applies Gmail labels and stars based on categories and priorities
-- **Automated Responses**: Generates draft responses for important emails that need replies
-- **Intelligent Cleanup**: Safely deletes low-priority emails based on age and category
-- **Trash Management**: Automatically empties trash to free up storage space
+- **📋Email Categorization**: Automatically categorizes emails into specific types (newsletters, promotions, personal, etc.)
+- **🔔Priority Assignment**: Assigns priority levels (HIGH, MEDIUM, LOW) based on content and sender with strict classification rules
+- **🏷️Smart Organization**: Applies Gmail labels and stars based on categories and priorities
+- **💬Automated Responses**: Generates draft responses for important emails that need replies
+- **🧹Intelligent Cleanup**: Safely deletes low-priority emails based on age and category
+- **🗑️ Trash Management**: Automatically empties trash to free up storage space
 
 ## Usage
 
