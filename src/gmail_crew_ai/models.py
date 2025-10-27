@@ -76,20 +76,6 @@ class EmailResponse(BaseModel):
     response_needed: bool = Field(..., description="Whether a response was needed")
     draft_saved: bool = Field(default=False, description="Whether a draft was saved")
 
-class SlackNotification(BaseModel):
-    """Model for Slack notification information."""
-    email_id: str = Field(..., description="Unique identifier for the email")
-    subject: str = Field(..., description="Email subject line")
-    sender: str = Field(..., description="Email sender")
-    category: EmailCategoryType = Field(..., description="Category of the email")
-    priority: EmailPriorityType = Field(..., description="Priority level of the email")
-    summary: str = Field(..., description="Brief summary of the email content")
-    action_needed: Optional[str] = Field(None, description="Action needed, if any")
-    headline: str = Field(..., description="Custom headline for the notification")
-    intro: str = Field(..., description="Custom intro phrase for the notification")
-    action_header: Optional[str] = Field(None, description="Custom header for the action section")
-    notification_sent: bool = Field(default=False, description="Whether notification was sent")
-
 class EmailCleanupInfo(BaseModel):
     """Model for email cleanup information."""
     email_id: str = Field(..., description="Unique identifier for the email")

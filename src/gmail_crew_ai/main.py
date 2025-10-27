@@ -4,8 +4,8 @@ import warnings
 from dotenv import load_dotenv
 
 # Remove or comment out these debug lines
-# import litellm
-# litellm._turn_on_debug()
+import litellm
+litellm._turn_on_debug()
 
 # Add this line to suppress the warning
 warnings.filterwarnings("ignore", message=".*not a Python type.*")

@@ -8,9 +8,8 @@ from pydantic import SkipValidation
 from datetime import date, datetime
 
 from gmail_crew_ai.tools.gmail_tools import GetUnreadEmailsTool, SaveDraftTool, GmailOrganizeTool, GmailDeleteTool, EmptyTrashTool
-from gmail_crew_ai.tools.slack_tool import SlackNotificationTool
 from gmail_crew_ai.tools.date_tools import DateCalculationTool
-from gmail_crew_ai.models import CategorizedEmail, OrganizedEmail, EmailResponse, SlackNotification, EmailCleanupInfo, SimpleCategorizedEmail, EmailDetails
+from gmail_crew_ai.models import CategorizedEmail, OrganizedEmail, EmailResponse, EmailCleanupInfo, SimpleCategorizedEmail, EmailDetails
 
 @CrewBase
 class GmailCrewAi():
@@ -90,16 +89,7 @@ class GmailCrewAi():
 			config=self.agents_config['response_generator'],
 			tools=[SaveDraftTool()],
 			llm=self.llm,
-		)
-	
-	@agent
-	def notifier(self) -> Agent:
-		"""The email notification agent."""
-		return Agent(
-			config=self.agents_config['notifier'],
-			tools=[SlackNotificationTool()],
-			llm=self.llm,
-		)
+		)	
 
 	@agent
 	def cleaner(self) -> Agent:
@@ -132,14 +122,6 @@ class GmailCrewAi():
 		return Task(
 			config=self.tasks_config['response_task'],
 			output_pydantic=EmailResponse,
-		)
-	
-	@task
-	def notification_task(self) -> Task:
-		"""The email notification task."""
-		return Task(
-			config=self.tasks_config['notification_task'],
-			output_pydantic=SlackNotification,
 		)
 
 	@task
